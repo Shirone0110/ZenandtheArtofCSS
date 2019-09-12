@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>Zen and the Art of CSS</h1>
+            <p>
+                Access <a href="http://www.csszengarden.com/">CSS Zen Garden</a> to see different designs of a same content.
+                <br />
+            </p>
+        </header>
+        <div id="content">
+            <article id="one">
+                <figure>
+                    <img src="ZenGarden.jpg" alt="CSS Zen Garden" />
+                    <figcaption>CSS Zen Garden</figcaption>
+                </figure>
+                <h2>About CSS Zen Garden</h2>
+                <p>
+                    The CSS Zen Garden is a World Wide Web development resource "built to demonstrate what can be accomplished visually through CSS-based designed."<br />
+                    Style sheets contributed by graphic designers from around the world are used to change the visual presentation of a single HTML file, producing hundreds of different designs. Aside from reference to an external CSS file, the HTML markup itself never changes. All visual differences are the result of the CSS (and supporting imagery).<br />
+                    <i>Source: <a href="https://en.wikipedia.org/wiki/CSS_Zen_Garden">Wikipedia: CSS Zen Garden</a></i>
+                </p>
+            </article>
+            <article id="two">
+                <figure class="even">
+                    <img src="CSS.jpeg" alt="CSS is awesome" />
+                </figure>
+                <h2>What makes Zen Garden so interesting</h2>
+                <p>
+                    CSS Zen Garden currently has 221 different designs, various both in CSS elements and layout styles. I think learning the definitions of elements by heart is harder than trying them out and see how they works. Zen Garden provides a great source of examples for new learners to inspect and try everything themselves. For people with bad imagination, it also helps them to learn how to framed their website.
+                </p>
+            </article>
+            <article id="three">
+                <figure>
+                    <img src="Capture.PNG" alt="A Robot Named Jimmy" />
+                    <figcaption>A Robot Named Jimmy</figcaption>
+                </figure>
+                <h2>My favorite design</h2>
+                <p>
+                    This is my favorite design: <a href="http://www.csszengarden.com/215/">A Robot Named Jimmy</a> <br />
+                    This design uses a &lt;<code>fixed</code>&gt; positioning for the background image so that when user scroll up or down, only the content is changing. Together with that, they applied the &lt;<code>z-index</code>&gt; to control the priority of elements.
+                    <br />
+                    They also use the &lt;<code>aside</code>&gt; element for showing other designs, archives, and resources at the bottom of the page, instead of on the side of the page like we see in the book.
+                </p>
+            </article>
+            <article class="center" id="four">
+                <h2>Things I learn from this design</h2>
+                <p class="column1of3">
+                    The line to the left and right of the first header is created by using <code>:after</code>. It's actually a straight line through the site but the header has greater priority using <code>z-index</code>. <code>:after</code> uses to add content after an element. <br />Similarly, <code>:before</code> uses to add content before an element.
+                </p>
+                <p class="column2of3">
+                    A very special effect I see on the page is the spinning sun-like image behind the robot. This effect was created using CSS transform property <code>rotate</code> and some keyframes (which I don't really understand now but I hope I will someday).
+                </p>
+                <p class="column3of3">
+                    Finally, CSS <code>@media</code> Rule. This is used to control how the page will display when being viewed on different devices with different height, width, resolution,... This is a very cool one and also very convenient since there are many ways to get on the internet now.
+                </p>
+            </article>
+        </div>
+    </body>
+</html>
