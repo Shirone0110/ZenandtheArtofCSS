@@ -149,3 +149,14 @@ article.center>p
     margin: 10px;
     text-align: justify;
 }
+
+#source
+{
+    float: right;
+    font-size: 16px;
+}
+
+figcaption
+{
+    font-size: 16px;
+}
