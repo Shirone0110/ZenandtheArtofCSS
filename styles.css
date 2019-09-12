@@ -3,9 +3,18 @@ header, section, footer, aside, nav, article, figure, figcaption
     display: block;
 }
 
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('robotoslab-regular.eot');
+    src: url('robotoslab-regular.eot?#iefix') format('embedded-opentype'), url('robotoslab-regular.woff') format('woff'),
+    url('RobotoSlab-Regular.ttf') format('truetype'), 
+    url('robotoslab-regular.svg#Roboto') format('svg');
+}
+
 body
 {
-    font-family: cursive;
+    font-family: Roboto, cursive;
     font-size: 20px;
     text-align: center;
     background-color: #FEFC8C;
